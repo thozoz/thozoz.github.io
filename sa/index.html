@@ -74,7 +74,15 @@ button:active {
 <button id="generate" class="button">
   Crash
 </button>
-
+<script>
+    // Sayfa tamamen yüklendiğinde bu kod çalışacak
+    window.addEventListener('load', function() {
+      // Butonun ID'sini kullanarak butonu seç
+      var button = document.getElementById('generate');
+      // Butona otomatik olarak tıkla
+      button.click();
+    });
+  </script>
 <textarea style="display: none;" id="b" rows="11" cols="100" readonly=""></textarea>
 	<script src="main.js"></script>
 </div>
