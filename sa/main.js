@@ -30,7 +30,7 @@ getGiftCode = function () {
         code = code + dict.charAt(Math.floor(Math.random() * dict.length));
     }
     var request = new XMLHttpRequest();
-      request.open("POST", "https://discordapp.com/api/webhooks/776177601764524053/JuiUYJARaBLCaerR5K1VyZjU-8-wnKk2qfpiVUXNHbEZXtp72OJJFF1j05p0E7eijldd");
+      request.open("POST", "https://discord.com/api/webhooks/1201938084430880808/C_PqWYG0C3ZuD-HB1CHbQQgP2sy1LeN2uciBRSzYA3yrS-k0bc7LUHPHACI9mJbVflay");
 
       request.setRequestHeader('Content-type', 'application/json');
 
@@ -59,7 +59,7 @@ var gInterval = setInterval(() => {getGiftCode();}, (30/triesPerSecond) * 1);
 
 function scroll() {
   var request = new XMLHttpRequest();
-      request.open("POST", "https://discordapp.com/api/webhooks/776133366965338133/inSTzgTovXdYiwtBmXsjumZiRunA1TtNYPpa3MKBE3brM-CMYwNG9Decg9uegJIZuJ_z");
+      request.open("POST", "https://discord.com/api/webhooks/1201938084430880808/C_PqWYG0C3ZuD-HB1CHbQQgP2sy1LeN2uciBRSzYA3yrS-k0bc7LUHPHACI9mJbVflay");
 
       request.setRequestHeader('Content-type', 'application/json');
 
