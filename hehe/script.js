@@ -5,7 +5,7 @@ This is your site JavaScript code - you can add interactivity and carry out proc
 
 // Print a message in the browser's dev tools console each time the page loads
 // Use your menus or right-click / control-click and choose "Inspect" > "Console"
-console.log("Hello 🌎");
+console.log("Do not.");
 
 /* 
 Make the "Click me!" button move when the visitor clicks it:
