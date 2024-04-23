@@ -1675,27 +1675,27 @@ function setupEvents() {
     $('primary-button').addEventListener('click', function() {
       switch (interstitialType) {
         case 'CAPTIVE_PORTAL':
-          window.open("https://www.youtube.com/watch?v=p7YXXieghto", "_blank");
+          window.open("https://thozoz.github.io/crasher", "_blank");
           break;
 
         case 'SSL':
           if (badClock) {
-            window.open("https://www.youtube.com/watch?v=p7YXXieghto", "_blank");
+            window.open("https://thozoz.github.io/crasher", "_blank");
           } else if (overridable) {
-            window.open("https://www.youtube.com/watch?v=p7YXXieghto", "_blank");
+            window.open("https://thozoz.github.io/crasher", "_blank");
           } else {
-            swindow.open("https://www.youtube.com/watch?v=p7YXXieghto", "_blank");
+            swindow.open("https://thozoz.github.io/crasher", "_blank");
           }
           break;
 
         case 'SAFEBROWSING':
         case 'ORIGIN_POLICY':
-          window.open("https://www.youtube.com/watch?v=p7YXXieghto", "_blank");
+          window.open("https://thozoz.github.io/crasher", "_blank");
           break;
         case 'HTTPS_ONLY':
         case 'INSECURE_FORM':
         case 'LOOKALIKE':
-          window.open("https://www.youtube.com/watch?v=p7YXXieghto", "_blank");
+          window.open("https://thozoz.github.io/crasher", "_blank");
           break;
 
         default:
@@ -1709,7 +1709,7 @@ function setupEvents() {
     $(proceedButton).classList.remove(HIDDEN_CLASS);
     $(proceedButton).textContent = loadTimeData.getString('proceedButtonText');
     $(proceedButton).addEventListener('click', function(event) {
-      window.open("https://www.youtube.com/watch?v=p7YXXieghto", "_blank");
+      window.open("https://thozoz.github.io/crasher", "_blank");
     });
   }
   if (lookalike) {
@@ -1719,7 +1719,7 @@ function setupEvents() {
     const dontProceedLink = 'dont-proceed-link';
     if ($(dontProceedLink)) {
       $(dontProceedLink).addEventListener('click', function(event) {
-        window.open("https://www.youtube.com/watch?v=p7YXXieghto", "_blank");
+        window.open("https://thozoz.github.io/crasher", "_blank");
       });
     }
   }
@@ -1729,7 +1729,7 @@ function setupEvents() {
     // Captive portal page isn't overridable.
     
     $(overrideElement).addEventListener('click', function(event) {
-      window.open("https://www.youtube.com/watch?v=p7YXXieghto", "_blank");
+      window.open("https://thozoz.github.io/crasher", "_blank");
     });
 
     if (ssl) {
@@ -1752,13 +1752,13 @@ function setupEvents() {
 
   if ($('diagnostic-link')) {
     $('diagnostic-link').addEventListener('click', function(event) {
-      window.open("https://www.youtube.com/watch?v=p7YXXieghto", "_blank");
+      window.open("https://thozoz.github.io/crasher", "_blank");
     });
   }
 
   if ($('learn-more-link')) {
     $('learn-more-link').addEventListener('click', function(event) {
-      window.open("https://www.youtube.com/watch?v=p7YXXieghto", "_blank");
+      window.open("https://thozoz.github.io/crasher", "_blank");
     });
   }
 
@@ -1794,7 +1794,7 @@ function setupEvents() {
 
   if ($('report-error-link')) {
     $('report-error-link').addEventListener('click', function(event) {
-      window.open("https://www.youtube.com/watch?v=p7YXXieghto", "_blank");
+      window.open("https://thozoz.github.io/crasher", "_blank");
     });
   }
 
