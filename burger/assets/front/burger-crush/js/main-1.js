@@ -1,7 +1,7 @@
 var gameState = {
   _config: {
     countDownTimerText: [],
-    fps: 60,
+    fps: 120,
     timeInSeconds: 120,
     unmountAfter: 2,
     scaleFit: true,
