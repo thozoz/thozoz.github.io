@@ -1,0 +1,1792 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "SpeedeeArabic-Regular";
+    src: local("☺"),
+        url("../../../front/common/fonts/font/Speedee_A_Rg.ttf")
+            format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "SpeedeeArabic-Bold";
+    src: local("☺"),
+        url("../../../front/common/fonts/font/Speedee_A_Bd.ttf")
+            format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: SpeedeeRegular;
+    src: local("☺"),
+        url("../../../front/common/fonts/font/Speedee_A_Rg.ttf")
+            format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: SpeedeeBold;
+    src: local("☺"),
+        url("../../../front/common/fonts/font/Speedee_A_Bd.ttf")
+            format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul {
+    margin: 0;
+    font-family: "SpeedeeArabic-Regular";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "SpeedeeArabic-Bold";
+    letter-spacing: 0.7px;
+}
+h1 span,
+h2 span,
+h3 span,
+h4 span,
+h5 span,
+h6 span {
+    display: block;
+}
+
+.btn:focus,
+a:focus,
+a:hover,
+button:focus,
+input:focus {
+    outline: 0;
+}
+
+.btn,
+.btn.focus,
+.btn:focus,
+.btn:hover,
+a,
+a:focus,
+a:hover {
+    text-decoration: none;
+}
+
+#app,
+.section,
+body,
+html {
+    height: 100vh;
+    margin: 0px;
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
+    overflow: hidden;
+}
+
+html {
+    font-family: sans-serif;
+    font-family: "SpeedeeArabic-Regular";
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    margin: 0px;
+    height: 100vh;
+    transition: 0.4s linear;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    position: fixed;
+}
+
+*,
+:after,
+:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+ol {
+    counter-reset: section;
+}
+
+p {
+    font-size: 16px;
+    font-family: "SpeedeeArabic-Regular";
+    line-height: 1.5;
+    margin: 12px 0;
+}
+p span {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+}
+
+.clearfix:after,
+.clearfix:before,
+.container:after,
+.container:before {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after,
+.container:after {
+    clear: both;
+}
+
+b,
+strong {
+    font-weight: 700;
+    font-family: "SpeedeeArabic-Bold";
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+.flex-wrapper {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -moz-box-direction: normal;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.flex-wrapper .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.flex-wrap {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -moz-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.flow-section {
+    display: none;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.flow-section.current {
+    display: flex;
+    background-position-y: top;
+}
+
+.flow-section.sectionTnC.current {
+    width: 100%;
+}
+.flow-section.sectionTnC.current .contentWrapper {
+    width: 100%;
+}
+.flow-section.sectionTnC.current .contentWrapper .tnc__content {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#app,
+.section,
+body,
+html {
+    height: calc(var(--vh, 1vh) * 100);
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 4px;
+}
+
+::-webkit-scrollbar:vertical {
+    width: 4px;
+}
+
+::-webkit-scrollbar:horizontal {
+    height: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #bfbfbf;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.corner-ribbon {
+    width: 200px;
+    background: #e43;
+    position: absolute;
+    top: 25px;
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: 1px;
+    color: #f0f0f0;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    z-index: 9999;
+}
+
+.corner-ribbon.sticky {
+    position: fixed;
+}
+
+.corner-ribbon.shadow {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.corner-ribbon.top-left {
+    top: 25px;
+    left: -50px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.corner-ribbon.top-right {
+    top: 25px;
+    right: -50px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    left: initial;
+}
+
+.ar .corner-ribbon.top-right {
+    top: 25px;
+    left: -50px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    right: initial;
+}
+
+.corner-ribbon.white {
+    background: #f0f0f0;
+    color: #555;
+}
+
+.corner-ribbon.black {
+    background: #333;
+}
+
+.corner-ribbon.grey {
+    background: #999;
+}
+
+.corner-ribbon.blue {
+    background: #39d;
+}
+
+.corner-ribbon.green {
+    background: #2c7;
+}
+
+.corner-ribbon.turquoise {
+    background: #1b9;
+}
+
+.corner-ribbon.purple {
+    background: #95b;
+}
+
+.corner-ribbon.red {
+    background: #e43;
+}
+
+.corner-ribbon.orange {
+    background: #e82;
+}
+
+.corner-ribbon.yellow {
+    background: #ec0;
+}
+
+.container {
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    height: calc(100vh - 40px);
+    z-index: 1;
+    position: relative;
+    padding: 15px 0px;
+}
+
+.android .container {
+    height: calc(100vh - 40px);
+}
+
+.audio-toggle {
+    position: absolute;
+    width: 36px !important;
+    height: 36px;
+    top: 10px;
+    right: 10px;
+    border: 0;
+    background: none;
+    z-index: 9999999;
+}
+.audio-toggle button.audio-btn {
+    display: block;
+    height: 100%;
+    width: 100%;
+    border: 0;
+    background-size: contain;
+    background-color: transparent;
+}
+.audio-toggle button.audio-btn.audio-is-paused {
+    background-image: url("../images/sound-off.png");
+}
+.audio-toggle button.audio-btn.audio-is-playing {
+    background-image: url("../images/sound-on.png");
+}
+
+.btn-red {
+    background-color: #ffbc0d;
+    border: 0;
+    width: 280px;
+    max-width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 0;
+    line-height: 60px;
+    border-radius: 40px;
+}
+.btn-red span {
+    font-family: "SpeedeeArabic-Bold";
+    text-transform: initial;
+    height: 30px;
+    font-size: 20px;
+    letter-spacing: 0;
+    text-align: center;
+}
+.btn-red.btn-disabled {
+    background: #898989 !important;
+    pointer-events: none;
+}
+
+.android .btn-red {
+    line-height: initial !important;
+}
+
+.screen-video .container {
+    height: 100vh;
+}
+.screen-video .container video#media-video {
+    height: 100%;
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    /* ----------- iPhone 6+, 7+ and 8+ ----------- */
+}
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    .screen-video .container video#media-video {
+        object-fit: contain;
+    }
+}
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+    .screen-video .container video#media-video {
+        object-fit: contain;
+    }
+}
+
+p {
+    /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+}
+@media screen and (min-width: 360px) {
+    p {
+        font-size: 1.1428571429rem;
+    }
+}
+@media screen and (min-width: 374px) {
+    p {
+        font-size: 1.1428571429rem;
+    }
+}
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    p {
+        font-size: 1.1428571429rem;
+    }
+}
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    p {
+        font-size: 1.2857142857rem;
+    }
+}
+p span {
+    display: block;
+}
+p a {
+    color: #000000;
+    font-family: "SpeedeeArabic-Bold";
+}
+
+.swv_title {
+    position: relative;
+    height: 100vh;
+}
+.swv_title .campaign_title {
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    text-transform: initial;
+    height: 50px;
+    font-family: "SpeedeeArabic-Regular";
+    color: #000000;
+}
+
+.sectionLoader {
+    height: 100vh;
+    background-repeat: round;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sectionLoader .loaderWrap {
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+}
+.sectionLoader .loaderWrap p {
+    color: #000000;
+    font-family: "SpeedeeArabic-Bold";
+    font-size: 32px;
+    letter-spacing: -0.29px;
+    line-height: 41px;
+    text-align: center;
+}
+.sectionLoader .loaderWrap p span {
+    display: inline-block;
+    animation: blink 1s infinite;
+}
+.sectionLoader .loaderWrap .header img {
+    width: 123px;
+}
+.sectionLoader .loaderWrap .loaderImg {
+    position: relative;
+}
+.sectionLoader .loaderWrap .loaderImg img {
+    width: 300px;
+    width: 420px;
+}
+.sectionLoader .loaderSection {
+    width: 100%;
+}
+.sectionLoader.story-board {
+    background: #db0313;
+}
+.sectionLoader.story-board img.story-board {
+    display: block;
+    width: 100%;
+}
+.sectionLoader.story-board img.push-btn {
+    display: none;
+}
+.sectionLoader.push-button {
+    background-color: #fff;
+}
+.sectionLoader.push-button .story-board {
+    display: none;
+}
+.sectionLoader.push-button img.push-btn {
+    display: block;
+    margin: 0 auto;
+}
+.sectionLoader.push-button img.story-board {
+    display: none;
+}
+
+@keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    25% {
+        -webkit-transform: rotate(15deg);
+    }
+    75% {
+        -webkit-transform: rotate(-15deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
+}
+.screen-video .container {
+    height: 100vh;
+}
+.screen-video .container video.media-video {
+    height: 100%;
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    /* ----------- iPhone 6+, 7+ and 8+ ----------- */
+}
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    .screen-video .container video.media-video {
+        object-fit: contain;
+    }
+}
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+    .screen-video .container video.media-video {
+        object-fit: contain;
+    }
+}
+
+.tnc-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 99;
+}
+.tnc-overlay h2 {
+    color: #fff;
+    font-size: 30px;
+}
+
+.sectionTnC {
+    background-repeat: round;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sectionTnC .header img {
+    width: 250px;
+}
+.ar .sectionTnC .header img {
+    width: 320px;
+}
+.sectionTnC .tncWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    padding: 15px;
+}
+.sectionTnC .tncWrapper .container {
+    justify-content: initial;
+    height: 100vh;
+    margin-top: 0px;
+    /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+    /* ----------- iPhone 6+, 7+ and 8+ ----------- */
+}
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    .sectionTnC .tncWrapper .container {
+        height: calc(100vh - 0px);
+    }
+}
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+    .sectionTnC .tncWrapper .container {
+        height: calc(100vh - 0px);
+    }
+}
+.sectionTnC .tncWrapper .content {
+    padding: 0;
+}
+.sectionTnC .tncWrapper .content h3 {
+    word-break: break-word;
+    font-family: "SpeedeeArabic-Bold";
+    color: #000000;
+    font-size: 55px;
+    line-height: 45px;
+    letter-spacing: 0;
+    text-align: center;
+    margin-top: 5px;
+    /* iPhone 11 Pro Max*/
+    /* iPhone 12 / 12 Pro/ 12 Max*/
+}
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+    .sectionTnC .tncWrapper .content h3 {
+        font-size: 48px;
+        line-height: 45px;
+    }
+}
+@media only screen and (min-device-width: 414px) and (min-device-height: 812px) {
+    .sectionTnC .tncWrapper .content h3 {
+        font-size: 55px;
+        line-height: 45px;
+    }
+}
+@media only screen and (min-device-width: 390px) and (min-device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+    .sectionTnC .tncWrapper .content h3 {
+        font-size: 55px;
+        line-height: 45px;
+    }
+}
+.sectionTnC .tncWrapper .content .contents {
+    padding-top: 10px;
+}
+.sectionTnC .tncWrapper .content .desc {
+    height: 65vh;
+    overflow-y: scroll;
+    margin-bottom: 25px;
+    width: 100%;
+    padding: 0px 15px;
+    /* iPhone 11 Pro Max*/
+    /* ----------- iPhone 6+, 7+ and 8+ ----------- */
+    /* iPhone XS / iPhone 11 Pro /  */
+    /* iPhone 11 Pro Max*/
+    /* iPhone 12 / 12 Pro/ 12 Max*/
+}
+@media only screen and (min-device-width: 360px) and (min-device-height: 800px) {
+    .sectionTnC .tncWrapper .content .desc {
+        height: 65vh;
+    }
+}
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+    .sectionTnC .tncWrapper .content .desc {
+        height: 62vh;
+    }
+}
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+    .sectionTnC .tncWrapper .content .desc {
+        height: 52vh;
+    }
+}
+@media only screen and (min-device-width: 414px) and (min-device-height: 812px) {
+    .sectionTnC .tncWrapper .content .desc {
+        height: 72vh;
+    }
+}
+@media only screen and (min-device-width: 390px) and (min-device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+    .sectionTnC .tncWrapper .content .desc {
+        height: 72vh;
+    }
+}
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+    .sectionTnC .tncWrapper .content .desc {
+        height: 72vh;
+    }
+}
+@media only screen and (min-width: 358px) and (max-width: 359px) {
+    .sectionTnC .tncWrapper .content .desc {
+        height: 62vh;
+    }
+}
+.sectionTnC .tncWrapper .content .desc p {
+    word-break: break-word;
+    text-align: left;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+
+.android .sectionTnC .tncWrapper .container {
+    height: calc(100vh - 25px);
+}
+@media only screen and (min-device-width: 401px) {
+    .android .sectionTnC .tncWrapper .content .desc {
+        height: 58vh;
+    }
+}
+@media only screen and (min-device-width: 360px) and (min-device-height: 670px) {
+    .android .sectionTnC .tncWrapper .content .desc {
+        height: 58vh;
+    }
+}
+
+@media only screen and (min-device-width: 426px) and (min-device-height: 926px) {
+    .android .sectionTnC .tncWrapper .content .desc {
+        height: 75vh;
+    }
+}
+
+@media only screen and (min-device-width: 412px) and (min-device-height: 926px) and (-webkit-device-pixel-ratio: 3) {
+    .sectionMainscreen .contentDesc p {
+        font-size: 16px !important;
+    }
+}
+
+@media only screen and (min-device-width: 412px) and (min-device-height: 916px) {
+    .android .sectionTnC .tncWrapper .content .desc {
+        height: 76vh;
+    }
+}
+
+.sectionMainscreen {
+    background: url(../images/Background-img.png);
+    background-repeat: round;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sectionMainscreen .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+.sectionMainscreen .container .content_wrapper {
+    justify-content: initial;
+    height: calc(100vh - 0px);
+    margin-top: 0px;
+    width: 100%;
+}
+.sectionMainscreen .header_details {
+    margin-bottom: 15px;
+    padding: 0px 15px;
+}
+.sectionMainscreen .header_details .header_title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+}
+.sectionMainscreen .header_details .header_title img {
+    width: 100px;
+    /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+    /* ----------- iPhone 6+, 7+ and 8+ ----------- */
+}
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    .sectionMainscreen .header_details .header_title img {
+        width: 80px;
+    }
+}
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+    .sectionMainscreen .header_details .header_title img {
+        width: 80px;
+    }
+}
+.sectionMainscreen .header_details .header_title h3 {
+    font-size: 35px;
+    font-family: "SpeedeeArabic-Bold";
+    letter-spacing: 0;
+    line-height: 34px;
+    text-align: center;
+    margin-left: 25px;
+    /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+    /* ----------- iPhone 6+, 7+ and 8+ ----------- */
+}
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    .sectionMainscreen .header_details .header_title h3 {
+        font-size: 24px;
+    }
+}
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+    .sectionMainscreen .header_details .header_title h3 {
+        font-size: 24px;
+    }
+}
+.sectionMainscreen .header_details .header_title p {
+    text-align: left;
+    margin: 5px 0;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 26px;
+}
+.sectionMainscreen .contentDesc {
+    height: 28vh;
+    overflow-y: scroll;
+    width: 100%;
+    padding: 0 15px;
+    /* ----------- iPhone 6, 7 and 8 ----------- */
+    /* ----------- iPhone 6+, 7+ and 8+ ----------- */
+}
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    .sectionMainscreen .contentDesc {
+        height: 120px;
+        margin-top: 5px;
+    }
+}
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+    .sectionMainscreen .contentDesc {
+        height: 150px;
+        margin-top: 12px;
+    }
+}
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+    .sectionMainscreen .contentDesc {
+        height: 33vh;
+        margin-top: 12px;
+    }
+}
+@media only screen and (device-width: 360px) and (device-height: 800px) {
+    .sectionMainscreen .contentDesc {
+        height: 33vh;
+        margin-top: 12px;
+    }
+}
+@media only screen and (min-width: 358px) and (max-width: 359px) {
+    .sectionMainscreen .contentDesc {
+        height: 147px;
+        margin-top: 15px;
+    }
+}
+.sectionMainscreen .contentDesc .instructionsWrap {
+    margin: 0 auto;
+}
+.sectionMainscreen .contentDesc h3 {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 0.15px;
+    line-height: 31px;
+    text-align: center;
+    margin: 0px 0px;
+    margin-bottom: 15px;
+}
+.sectionMainscreen .contentDesc p {
+    text-align: left;
+    margin: 5px 0;
+    /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+    /* ----------- iPhone 6+, 7+ and 8+ ----------- */
+    /* iPhone 12 / 12 Pro/ 12 Max*/
+}
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    .sectionMainscreen .contentDesc p {
+        font-size: 16px;
+    }
+}
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+    .sectionMainscreen .contentDesc p {
+        font-size: 16px;
+    }
+}
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+    .sectionMainscreen .contentDesc p {
+        font-size: 22px;
+    }
+}
+@media only screen and (min-device-width: 390px) and (min-device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+    .sectionMainscreen .contentDesc p {
+        font-size: 22px;
+    }
+}
+@media only screen and (min-width: 358px) and (max-width: 359px) {
+    .sectionMainscreen .contentDesc p {
+        font-size: 16px;
+    }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 360px) {
+    .sectionMainscreen .contentDesc p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-device-height: 740px) {
+    .android .sectionMainscreen .contentDesc {
+        height: auto;
+    }
+}
+
+.sectionChooseReward {
+    background: white;
+    background-repeat: round;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.sectionChooseReward .screen-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 99;
+}
+.sectionChooseReward .screen-overlay h2 {
+    color: #fff;
+    font-size: 30px;
+}
+.sectionChooseReward .rewardsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+.sectionChooseReward .rewardsWrapper .content {
+    flex-wrap: nowrap;
+    justify-content: initial;
+    height: 100vh;
+    margin-top: 0px;
+}
+.sectionChooseReward .rewardsWrapper .content .headerWrap {
+    width: 100%;
+}
+.sectionChooseReward .rewardsWrapper .content h3 {
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    line-height: 45px;
+    text-align: center;
+    width: 100%;
+    margin: 0px 0px 25px 0px;
+    /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+    /* ----------- iPhone 6+, 7+ and 8+ ----------- */
+}
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    .sectionChooseReward .rewardsWrapper .content h3 {
+        font-size: 32px;
+        letter-spacing: 0.4px;
+    }
+}
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+    .sectionChooseReward .rewardsWrapper .content h3 {
+        font-size: 32px;
+        letter-spacing: 0.4px;
+    }
+}
+.sectionChooseReward .rewardsWrapper .content h4 {
+    font-size: 32px;
+    letter-spacing: -0.3px;
+    line-height: 43px;
+    text-align: center;
+    text-transform: lowercase;
+    width: 100%;
+    margin: 10px 0px;
+    /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+    /* ----------- iPhone 6+, 7+ and 8+ ----------- */
+}
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    .sectionChooseReward .rewardsWrapper .content h4 {
+        font-size: 26px;
+    }
+}
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+    .sectionChooseReward .rewardsWrapper .content h4 {
+        font-size: 26px;
+    }
+}
+.sectionChooseReward .rewardsWrapper .content .header {
+    width: 100%;
+}
+.sectionChooseReward .rewardsWrapper .content .header img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+.sectionChooseReward .rewardsWrapper .content .offerWrap {
+    margin: 0 auto;
+    width: 100%;
+}
+.sectionChooseReward .rewardsWrapper .content .offerWrap .rewardImage {
+    display: block;
+    border-radius: 5px;
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    position: relative;
+    line-height: 0;
+    /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+    /* ----------- iPhone 6+, 7+ and 8+ ----------- */
+    /* iPhone XS / iPhone 11 Pro /  */
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 360px) {
+    .sectionChooseReward .rewardsWrapper .content .offerWrap .rewardImage {
+        width: 130px;
+    }
+}
+@media only screen and (min-device-height: 530px) and (max-device-height: 605px) {
+    .sectionChooseReward .rewardsWrapper .content .offerWrap .rewardImage {
+        width: 130px;
+    }
+}
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    .sectionChooseReward .rewardsWrapper .content .offerWrap .rewardImage {
+        width: 130px;
+    }
+}
+@media only screen and (min-device-width: 360px) and (min-device-height: 670px) {
+    .sectionChooseReward .rewardsWrapper .content .offerWrap .rewardImage {
+        width: 175px;
+    }
+}
+@media only screen and (min-width: 358px) and (max-width: 359px) {
+    .sectionChooseReward .rewardsWrapper .content .offerWrap .rewardImage {
+        width: 175px;
+    }
+}
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+    .sectionChooseReward .rewardsWrapper .content .offerWrap .rewardImage {
+        width: 170px;
+    }
+}
+@media only screen and (min-device-width: 360px) and (max-device-height: 800px) {
+    .sectionChooseReward .rewardsWrapper .content .offerWrap .rewardImage {
+        width: 180px;
+    }
+}
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+    .sectionChooseReward .rewardsWrapper .content .offerWrap .rewardImage {
+        width: 180px;
+    }
+}
+@media only screen and (min-device-width: 390px) and (min-device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+    .sectionChooseReward .rewardsWrapper .content .offerWrap .rewardImage {
+        width: 180px;
+    }
+}
+@media only screen and (min-width: 358px) and (max-width: 359px) {
+    .sectionChooseReward .rewardsWrapper .content .offerWrap .rewardImage {
+        width: 160px;
+    }
+}
+.sectionChooseReward
+    .rewardsWrapper
+    .content
+    .offerWrap
+    .rewardImage.grey
+    .overlay:after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.sectionChooseReward .rewardsWrapper .content .offerWrap .borderGreen img {
+    border: 6px solid #57d616;
+}
+.sectionChooseReward .rewardsWrapper .content .offerWrap .optionTag:before,
+.sectionChooseReward .rewardsWrapper .content .offerWrap .optionTag:after {
+    background-color: rgba(0, 0, 0, 0.2);
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 20%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.sectionCongrats {
+    background: white;
+    background-repeat: round;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sectionCongrats .header img {
+    width: 200px;
+}
+.sectionCongrats .top-section {
+    margin-bottom: 30px;
+    /* ----------- iPhone 6+, 7+ and 8+ ----------- */
+}
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    .sectionCongrats .top-section {
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+    .sectionCongrats .top-section {
+        margin-bottom: 10px;
+    }
+}
+.sectionCongrats .carWrap {
+    margin-top: 30px;
+}
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    .sectionCongrats .carWrap {
+        margin-top: 20px;
+    }
+}
+.sectionCongrats .congratsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    padding: 15px;
+}
+.sectionCongrats .congratsWrapper .content {
+    justify-content: flex-start;
+    margin-top: 0px;
+    height: 100vh;
+    padding: 0;
+}
+.sectionCongrats .congratsWrapper .content .header {
+    width: 100%;
+    margin-bottom: 15px;
+    /* ----------- iPhone 6+, 7+ and 8+ ----------- */
+}
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    .sectionCongrats .congratsWrapper .content .header {
+        margin-bottom: 5px;
+    }
+}
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+    .sectionCongrats .congratsWrapper .content .header {
+        margin-bottom: 5px;
+    }
+}
+.sectionCongrats .congratsWrapper .content .header h3 {
+    color: #000000;
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    line-height: 45px;
+    text-align: center;
+    text-transform: initial;
+    word-break: break-word;
+    margin: 25px 0px;
+    /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+    /* ----------- iPhone 6+, 7+ and 8+ ----------- */
+    /* iPhone XS / iPhone 11 Pro /  */
+}
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    .sectionCongrats .congratsWrapper .content .header h3 {
+        font-size: 36px;
+        line-height: 37px;
+    }
+}
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+    .sectionCongrats .congratsWrapper .content .header h3 {
+        font-size: 40px;
+        line-height: 42px;
+    }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 360px) {
+    .sectionCongrats .congratsWrapper .content .header h3 {
+        font-size: 32px;
+        line-height: 30px;
+    }
+}
+@media only screen and (min-width: 358px) and (max-width: 359px) {
+    .sectionCongrats .congratsWrapper .content .header h3 {
+        font-size: 42px;
+    }
+}
+.sectionCongrats .congratsWrapper .content .congratsWrap_Content {
+    width: 280px;
+    max-width: 88%;
+    background: linear-gradient(
+        90deg,
+        #8a2c71 0%,
+        #e50c1c 48.28%,
+        #ec6110 89.69%,
+        #ed680f 100%
+    );
+    border-radius: 9px;
+    padding: 15px 15px;
+    margin: 0 auto;
+    /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+    /* ----------- iPhone 6+, 7+ and 8+ ----------- */
+    /* iPhone XS / iPhone 11 Pro /  */
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 360px) {
+    .sectionCongrats .congratsWrapper .content .congratsWrap_Content {
+        width: 225px;
+    }
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 880px) {
+    .sectionCongrats .congratsWrapper .content .congratsWrap_Content {
+        width: 220px;
+    }
+}
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    .sectionCongrats .congratsWrapper .content .congratsWrap_Content {
+        width: 220px;
+    }
+}
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+    .sectionCongrats .congratsWrapper .content .congratsWrap_Content {
+        width: 280px;
+    }
+}
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+    .sectionCongrats .congratsWrapper .content .congratsWrap_Content {
+        width: 300px;
+    }
+}
+@media only screen and (min-width: 358px) and (max-width: 359px) {
+    .sectionCongrats .congratsWrapper .content .congratsWrap_Content {
+        width: 260px;
+    }
+}
+.sectionCongrats .congratsWrapper .content .congratsWrap_Content img {
+    border-radius: 10px;
+}
+.sectionCongrats .congratsWrapper .content .congratsWrap_Content h4 {
+    color: #ffffff;
+    font-size: 22px;
+    letter-spacing: 0.55px;
+    line-height: 23px;
+    text-align: center;
+    margin-top: 1.5rem;
+    word-break: break-word;
+    /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+    /* ----------- iPhone 6+, 7+ and 8+ ----------- */
+    /* iPhone XS / iPhone 11 Pro /  */
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 360px) {
+    .sectionCongrats .congratsWrapper .content .congratsWrap_Content h4 {
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 1rem;
+    }
+}
+@media only screen and (min-device-width: 360px) and (min-device-height: 670px) {
+    .sectionCongrats .congratsWrapper .content .congratsWrap_Content h4 {
+        font-size: 16px;
+        line-height: 18px;
+        margin-top: 1rem;
+    }
+}
+@media only screen and (min-width: 358px) and (max-width: 359px) {
+    .sectionCongrats .congratsWrapper .content .congratsWrap_Content h4 {
+        font-size: 16px;
+        line-height: 18px;
+        margin-top: 1rem;
+    }
+}
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    .sectionCongrats .congratsWrapper .content .congratsWrap_Content h4 {
+        font-size: 14px;
+        line-height: 16px;
+        margin-top: 10px;
+    }
+}
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+    .sectionCongrats .congratsWrapper .content .congratsWrap_Content h4 {
+        font-size: 14px;
+        line-height: 16px;
+        margin-top: 10px;
+    }
+}
+.sectionCongrats .congratsWrapper .content .cta {
+    margin-top: 1rem;
+}
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    .sectionCongrats .congratsWrapper .content .cta {
+        margin-top: 10px;
+    }
+}
+.sectionCongrats .congratsWrapper .content .carWrap img {
+    width: 180px;
+    /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+    /* ----------- iPhone 6+, 7+ and 8+ ----------- */
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 360px) {
+    .sectionCongrats .congratsWrapper .content .carWrap img {
+        width: 100px;
+    }
+}
+@media only screen and (min-device-width: 360px) and (min-device-height: 670px) {
+    .sectionCongrats .congratsWrapper .content .carWrap img {
+        width: 100px;
+    }
+}
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    .sectionCongrats .congratsWrapper .content .carWrap img {
+        width: 80px;
+    }
+}
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+    .sectionCongrats .congratsWrapper .content .carWrap img {
+        width: 80px;
+    }
+}
+@media only screen and (min-width: 358px) and (max-width: 359px) {
+    .sectionCongrats .congratsWrapper .content .carWrap img {
+        width: 60px;
+    }
+}
+
+.sectionLost,
+.sectionRetry {
+    background-repeat: round;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sectionLost .contentWrapper,
+.sectionRetry .contentWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    padding: 15px;
+}
+.sectionLost .contentWrapper .container,
+.sectionRetry .contentWrapper .container {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    height: 100vh;
+    margin-top: 0px;
+}
+.sectionLost .contentWrapper .container .content-header,
+.sectionRetry .contentWrapper .container .content-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+.sectionLost .contentWrapper .container .content-header .left,
+.sectionRetry .contentWrapper .container .content-header .left {
+    width: 170px;
+}
+.ar .sectionLost .contentWrapper .container .content-header .left,
+.ar .sectionRetry .contentWrapper .container .content-header .left {
+    width: 125px;
+}
+.sectionLost .contentWrapper .container .content-header .right,
+.sectionRetry .contentWrapper .container .content-header .right {
+    width: 145px;
+    background: linear-gradient(90deg, #910063 0%, #db0007 40%, #e8720a 100%);
+    border-radius: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+}
+.sectionLost .contentWrapper .container .content-header .right h4,
+.sectionRetry .contentWrapper .container .content-header .right h4 {
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: 55px;
+    height: 55px;
+    text-align: center;
+    color: #ffffff;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.sectionLost .contentWrapper .container .content-header .right img,
+.sectionRetry .contentWrapper .container .content-header .right img {
+    width: 40px;
+    height: 40px !important;
+}
+.sectionLost .contentWrapper .container .content-header p,
+.sectionRetry .contentWrapper .container .content-header p {
+    font-size: 22px;
+    letter-spacing: -0.19px;
+    line-height: 28px;
+    margin: 0;
+    padding: 0;
+}
+.sectionLost .contentWrapper .container .content,
+.sectionRetry .contentWrapper .container .content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-start;
+}
+.sectionLost .contentWrapper .container .content .header,
+.sectionRetry .contentWrapper .container .content .header {
+    margin-bottom: 30px;
+}
+@media only screen and (min-width: 358px) and (max-width: 359px) {
+    .sectionLost .contentWrapper .container .content .header,
+    .sectionRetry .contentWrapper .container .content .header {
+        margin-bottom: 10px;
+    }
+}
+.sectionLost .contentWrapper .container .content h3,
+.sectionRetry .contentWrapper .container .content h3 {
+    color: #000000;
+    font-size: 28px;
+    letter-spacing: 0.5px;
+    line-height: 28px;
+    text-align: center;
+}
+.ar .sectionLost .contentWrapper .container .content h3,
+.ar .sectionRetry .contentWrapper .container .content h3 {
+    line-height: 60px;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 360px) {
+    .sectionLost .contentWrapper .container .content h3,
+    .sectionRetry .contentWrapper .container .content h3 {
+        font-size: 42px;
+        line-height: 44px;
+    }
+}
+.sectionLost .contentWrapper .container .content h3 span,
+.sectionRetry .contentWrapper .container .content h3 span {
+    display: block;
+}
+.sectionLost .contentWrapper .container .content p,
+.sectionRetry .contentWrapper .container .content p {
+    font-size: 18px;
+    letter-spacing: -0.16px;
+    line-height: 23px;
+    text-align: center;
+    /* ----------- iPhone 6+, 7+ and 8+ ----------- */
+    /* iPhone XS / iPhone 11 Pro /  */
+}
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    .sectionLost .contentWrapper .container .content p,
+    .sectionRetry .contentWrapper .container .content p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+    .sectionLost .contentWrapper .container .content p,
+    .sectionRetry .contentWrapper .container .content p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+    .sectionLost .contentWrapper .container .content p,
+    .sectionRetry .contentWrapper .container .content p {
+        font-size: 20px;
+        line-height: 26px;
+    }
+}
+@media only screen and (min-width: 358px) and (max-width: 359px) {
+    .sectionLost .contentWrapper .container .content p,
+    .sectionRetry .contentWrapper .container .content p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+.sectionLost .contentWrapper .container .content p span,
+.sectionRetry .contentWrapper .container .content p span {
+    display: block;
+}
+.sectionLost .contentWrapper .container .content .desc,
+.sectionRetry .contentWrapper .container .content .desc {
+    width: 300px;
+    max-width: 100%;
+    margin: 0 auto;
+    word-break: break-word;
+}
+.sectionLost .contentWrapper .container .content .btnWrap,
+.sectionRetry .contentWrapper .container .content .btnWrap {
+    width: 100%;
+}
+.sectionLost .contentWrapper .container p.lostwrapbtntext,
+.sectionRetry .contentWrapper .container p.lostwrapbtntext {
+    font-family: "SpeedeeArabic-Bold";
+}
+.sectionLost .contentWrapper .container p.lostwrapbtntext span,
+.sectionRetry .contentWrapper .container p.lostwrapbtntext span {
+    display: inline;
+}
+.sectionLost .contentWrapper .container p a,
+.sectionRetry .contentWrapper .container p a {
+    font-family: "SpeedeeArabic-Regular";
+    border-bottom: 1.5px solid #452210;
+}
+
+.sectionRetry {
+    background-repeat: round;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sectionRetry .content h3 {
+    max-width: 300px;
+    margin: 0 auto;
+}
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    .sectionRetry .content h3 {
+        font-size: 48px;
+        letter-spacing: -0.43px;
+    }
+}
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+    .sectionRetry .content h3 {
+        font-size: 55px;
+        line-height: 55px;
+    }
+}
+
+.sectionWentwrong,
+.sectionAlreadyclaimed {
+    background-repeat: round;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sectionWentwrong .oopsWrap,
+.sectionAlreadyclaimed .oopsWrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    padding: 15px;
+}
+.sectionWentwrong .oopsWrap .content,
+.sectionAlreadyclaimed .oopsWrap .content {
+    height: 100vh;
+    margin-top: 0px;
+}
+.sectionWentwrong .oopsWrap .content .header img,
+.sectionAlreadyclaimed .oopsWrap .content .header img {
+    width: 150px;
+}
+.sectionWentwrong .oopsWrap .content .desc,
+.sectionAlreadyclaimed .oopsWrap .content .desc {
+    width: 100%;
+    padding: 0 10px;
+}
+.sectionWentwrong .oopsWrap .content .desc p a,
+.sectionAlreadyclaimed .oopsWrap .content .desc p a {
+    border-bottom: 1.5px solid #452210;
+}
+.sectionWentwrong .oopsWrap .content h3,
+.sectionAlreadyclaimed .oopsWrap .content h3 {
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    line-height: 45px;
+    text-align: center;
+}
+.sectionWentwrong .oopsWrap .content p,
+.sectionAlreadyclaimed .oopsWrap .content p {
+    font-size: 18px;
+    letter-spacing: -0.16px;
+    line-height: 23px;
+}
+.sectionWentwrong .oopsWrap .content .small,
+.sectionAlreadyclaimed .oopsWrap .content .small {
+    font-size: 16px;
+    letter-spacing: -0.14px;
+    line-height: 20px;
+    width: 100%;
+    padding: 0px 10px;
+    word-break: break-word;
+}
+@media only screen and (min-width: 358px) and (max-width: 359px) {
+    .sectionWentwrong .oopsWrap .content .small,
+    .sectionAlreadyclaimed .oopsWrap .content .small {
+        font-size: 15px;
+        line-height: 19px;
+    }
+}
+.sectionWentwrong .alreadyClaimed,
+.sectionAlreadyclaimed .alreadyClaimed {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    padding: 15px;
+}
+.sectionWentwrong .alreadyClaimed .content,
+.sectionAlreadyclaimed .alreadyClaimed .content {
+    height: 100vh;
+    margin-top: 0px;
+}
+.sectionWentwrong .alreadyClaimed .content .header img,
+.sectionAlreadyclaimed .alreadyClaimed .content .header img {
+    width: 150px;
+}
+.sectionWentwrong .alreadyClaimed .content h3,
+.sectionAlreadyclaimed .alreadyClaimed .content h3 {
+    font-size: 35px;
+    letter-spacing: 0.5px;
+    line-height: 35px;
+    text-align: center;
+}
+.sectionWentwrong .alreadyClaimed .content .desc,
+.sectionAlreadyclaimed .alreadyClaimed .content .desc {
+    width: 300px;
+    max-width: 100%;
+}
+.sectionWentwrong .alreadyClaimed .content .desc p,
+.sectionAlreadyclaimed .alreadyClaimed .content .desc p {
+    font-size: 16px;
+    letter-spacing: -0.14px;
+    line-height: 20px;
+    text-align: center;
+}
+.sectionWentwrong .alreadyClaimed .content .small,
+.sectionAlreadyclaimed .alreadyClaimed .content .small {
+    font-size: 16px;
+    letter-spacing: -0.14px;
+    line-height: 20px;
+    width: 100%;
+    padding: 0px 10px;
+    word-break: break-word;
+}
+@media only screen and (min-width: 358px) and (max-width: 359px) {
+    .sectionWentwrong .alreadyClaimed .content .small,
+    .sectionAlreadyclaimed .alreadyClaimed .content .small {
+        font-size: 15px;
+        line-height: 19px;
+    }
+}
+
+.grey img {
+    border: 6px solid #fbb900;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+@keyframes blink {
+    to {
+        opacity: 0;
+    }
+}
+@keyframes scaleanimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.9);
+    }
+}
+.hidden {
+    /* display: none; */
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.SpeedeeBold {
+    font-family: "SpeedeeBold";
+}
+
+.SpeedeeRegular {
+    font-family: "SpeedeeRegular";
+}
+
+.section-gameloader {
+    height: 100%;
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section-win,
+.section-Lose {
+    background: white;
+}
+
+.gifImg,
+.bgGame {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    margin: 0 auto;
+}
+
+.stickyBtn {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+/*# sourceMappingURL=style.css.map */
